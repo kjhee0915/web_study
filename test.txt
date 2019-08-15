@@ -1,5 +1,5 @@
 test file
-
+실습2에서 수정
 
 update file1
 update file2
