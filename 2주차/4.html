@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+	<style>
+		*{margin: 0; padding: 0; outline: 2px solid #090;}
+		ul, li { list-style:none; }
+		.wrap{ width:1200px;}
+		.header{display: flex;}
+		.header > div { height:100px ; text-align: center; line-height: 100px; }
+		.header .logo{ width: 200px;}
+		.menu{ width: 1000px;}
+		.slide{height: 300px}
+		.content{display: flex;}
+		.content .title{font-size:19px; color:#09F; padding:10px;}
+		.content > div{height: 200px; width: 400px;}
+		.gallery ul{display: flex; outline:none;}
+		.gallery li{ width:100px; height:100px; margin:16px calc(100px / 6);}
+		.banner ul{display: flex; outline:none; margin: 11px 80px}
+		.banner li{height: 60px; width: 100px;margin:0 10px;}
+		.footer{display: flex;}
+		.footer>div{height: 100px;line-height: 100px;text-align: center;}
+		.footer .logo{ width: 200px;}
+		.copyright{width: 1000px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo"><a href="#">LOGO</a></div>
+			<div class="menu">MENU</div>
+		</div>
+		<div class="slide"></div>
+		<div class="content">
+			<div class="notice">
+				<h3 class="title">공지사항</h3>
+				<div class="list">Lorem ipsum dolor sit.</div>
+				<div class="list">Lorem ipsum dolor sit.</div>
+				<div class="list">Lorem ipsum dolor sit.</div>
+			</div>
+			<div class="gallery">
+				<h3 class="title">갤러리</h3>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<h3 class="title">바로가기</h3>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="logo">LOGO</div>
+			<div class="copyright">Copyright &copy; 2019 Joohee All Right Reserved.</div>
+		</div>
+	</div>
+</body>
+</html>

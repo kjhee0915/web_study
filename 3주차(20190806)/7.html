@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>메뉴입니다.</title>
+	<style>
+		*{margin:0;padding:0;}
+		a{text-decoration: none; color: inherit;}
+		ul, li {list-style:none;}
+		.gnb>ul{display:flex; justify-content: center;}
+		.gnb>ul>li>ul{display:none;}
+		.gnb>ul>li:hover>ul{display:block;}
+		.gnb a{display:block;transition:0.5s;letter-spacing:-1px}
+		.gnb>ul>li>a{padding:10px 40px;font-size:19px;color:#09F;}
+		.gnb>ul>li:hover>a{background:#09F;color:#fff;}
+		.gnb>ul>li>ul>li>a{font-size:17px;text-align:center;background:#09F;color:#fff;padding:10px 0;}
+		.gnb>ul>li>ul>li>a:hover{background:#fff;color:#09F;}
+	</style>
+</head>
+<body>
+	<nav class="gnb">
+		<ul>
+			<li>
+				<a href="#">메인메뉴01</a>
+				<ul>
+					<li><a href="#">서브메뉴01</a></li>
+					<li><a href="#">서브메뉴02</a></li>
+					<li><a href="#">서브메뉴03</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">메인메뉴02</a>
+				<ul>
+					<li><a href="#">서브메뉴01</a></li>
+					<li><a href="#">서브메뉴02</a></li>
+					<li><a href="#">서브메뉴03</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">메인메뉴03</a>
+				<ul>
+					<li><a href="#">서브메뉴01</a></li>
+					<li><a href="#">서브메뉴02</a></li>
+					<li><a href="#">서브메뉴03</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">메인메뉴04</a>
+				<ul>
+					<li><a href="#">서브메뉴01</a></li>
+					<li><a href="#">서브메뉴02</a></li>
+					<li><a href="#">서브메뉴03</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

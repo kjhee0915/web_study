@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		.slide { height: 600px; width: 1200px; margin: 0 auto; border:1px solid #000; overflow: hidden }
+		.slide ul { width:calc(100% * 4); display:flex; animation:6s slide infinite;}
+		.slide li { width:calc(100% / 4); height: 600px; }
+		.slide li:nth-child(1){ background: url(https://image.ytn.co.kr/general/jpg/2017/0504/201705041033343063_t.jpg) no-repeat center / cover }
+		.slide li:nth-child(2){ background: url(https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/5NzU/image/SmlJkEiEwwIzM1UCWV_LznfDdAM.jpg) no-repeat center / cover }
+		.slide li:nth-child(3){ background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLakn5pgPo0AkVnBcC7xRaGJNa-tpjMhuOU-CtzKbq2X_EvZf) no-repeat center / cover }
+		.slide li:nth-child(4){ background: url(https://image.ytn.co.kr/general/jpg/2017/0504/201705041033343063_t.jpg) no-repeat center / cover }
+		@keyframes slide {
+			0%   { margin-left:0; }
+			20%  { margin-left:0; }
+			33%  { margin-left:-100%; }
+			53%  { margin-left:-100%; }
+			66%  { margin-left:-200%; }
+			86%  { margin-left:-200%; }
+			99.99%  { margin-left:-300%; }
+			100%  { margin-left:0; }
+		}
+	</style>
+</head>
+<body>
+	<div class="slide">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

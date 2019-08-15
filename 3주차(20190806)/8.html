@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+	<style>
+		*{margin: 0; padding: 0; outline: 1px solid #090;}
+		ul, li { list-style:none; }
+		a{text-decoration: none; color: inherit;}
+		.wrap{ width:1200px;}
+		.header{display: flex; justify-content: space-between;}
+		.header > div { height:100px ; text-align: center; line-height: 100px; }
+		.header .logo{ width: 200px;}
+		.menu{ width: 1000px;}
+		.slide{height: 300px}
+		.content{display: flex;}
+		.content .title{font-size:19px; color:#09F; padding:10px;}
+		.content > div{height: 200px; width: 400px;}
+		.gallery ul{display: flex; outline:none;}
+		.gallery li{ width:100px; height:100px; margin:16px calc(100px / 6);}
+		.banner ul{display: flex; outline:none; margin: 11px 80px}
+		.banner li{height: 60px; width: 100px;margin:0 10px;}
+		.footer{display: flex;}
+		.footer>div{height: 100px;line-height: 100px;text-align: center;}
+		.footer .logo{ width: 200px;}
+		.copyright{width: 1000px;}
+
+		.gnb>ul{display:flex; justify-content: center;}
+		.gnb>ul>li{position: relative;}
+		.gnb>ul>li>ul{display:none; position: absolute;left:0;width:100%;}
+		.gnb>ul>li:hover>ul{display:block;}
+
+		.gnb a{display:block;transition:0.5s;letter-spacing:-1px}
+		.gnb>ul>li>a{padding:0 40px;font-size:19px;color:#09F;line-height:100px;}
+		.gnb>ul>li:hover>a{background:#09F;color:#fff;}
+		.gnb>ul>li>ul>li>a{font-size:17px;text-align:center;background:#09F;color:#fff;padding:10px 0;}
+		.gnb>ul>li>ul>li>a:hover{background:#fff;color:#09F;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo"><a href="#">LOGO</a></div>
+				<nav class="gnb">
+					<ul>
+						<li>
+							<a href="#">메인메뉴01</a>
+							<ul>
+								<li><a href="#">서브메뉴01</a></li>
+								<li><a href="#">서브메뉴02</a></li>
+								<li><a href="#">서브메뉴03</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">메인메뉴02</a>
+							<ul>
+								<li><a href="#">서브메뉴01</a></li>
+								<li><a href="#">서브메뉴02</a></li>
+								<li><a href="#">서브메뉴03</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">메인메뉴03</a>
+							<ul>
+								<li><a href="#">서브메뉴01</a></li>
+								<li><a href="#">서브메뉴02</a></li>
+								<li><a href="#">서브메뉴03</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">메인메뉴04</a>
+							<ul>
+								<li><a href="#">서브메뉴01</a></li>
+								<li><a href="#">서브메뉴02</a></li>
+								<li><a href="#">서브메뉴03</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+		</div>
+		<div class="slide"></div>
+		<div class="content">
+			<div class="notice">
+				<h3 class="title">공지사항</h3>
+				<div class="list">Lorem ipsum dolor sit.</div>
+				<div class="list">Lorem ipsum dolor sit.</div>
+				<div class="list">Lorem ipsum dolor sit.</div>
+			</div>
+			<div class="gallery">
+				<h3 class="title">갤러리</h3>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<h3 class="title">바로가기</h3>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="logo">LOGO</div>
+			<div class="copyright">Copyright &copy; 2019 Joohee All Right Reserved.</div>
+		</div>
+	</div>
+</body>
+</html>
