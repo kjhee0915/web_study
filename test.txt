@@ -1,5 +1,5 @@
-test file
-½Ç½À2¿¡¼­ ¼öÁ¤
+ï»¿test file
+ì‹¤ìŠµ2ì—ì„œ ìˆ˜ì •
 
 update file1
 update file2
